@@ -1,0 +1,162 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Container */
+.container {
+    background-color: white;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#modeBtn {
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ff7e5f;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#modeBtn:hover {
+    background-color: #feb47b;
+}
+
+/* Input & Button */
+.todo-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+input:focus {
+    border-color: #ff7e5f;
+}
+
+button {
+    background-color: #ff7e5f;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #feb47b;
+}
+
+/* To-Do List */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f4f4f4;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #bbb;
+}
+
+li button {
+    background-color: #ff5c5c;
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+li button:hover {
+    background-color: #ff4747;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .container {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark-mode input {
+    background-color: #333;
+    color: white;
+    border: 2px solid #555;
+}
+
+.dark-mode button {
+    background-color: #ff5c5c;
+}
+
+.dark-mode button:hover {
+    background-color: #ff4747;
+}
+
+.dark-mode li {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode li button {
+    background-color: #ff5c5c;
+}
+
+.dark-mode li button:hover {
+    background-color: #ff4747;
+}
